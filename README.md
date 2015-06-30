@@ -26,4 +26,4 @@ API for an OpenWorks Status Page
 
 ## Gem Docs
 
-[Rails API]https://github.com/rails-api/rails-api)
+[Rails API](https://github.com/rails-api/rails-api)
