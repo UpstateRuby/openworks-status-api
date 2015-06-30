@@ -24,3 +24,6 @@ API for an OpenWorks Status Page
   * https://status.digitalocean.com
   * https://status.simple.com
 
+## Gem Docs
+
+[Rails API]https://github.com/rails-api/rails-api)
