@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rails-api/active_model_serializers.git
+  revision: ac1991fd6bb757fcb55cd100a02695f51ad09298
+  specs:
+    active_model_serializers (0.10.0.rc1)
+      activemodel (>= 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,8 +27,6 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    active_model_serializers (0.9.3)
-      activemodel (>= 3.2)
     activejob (4.2.3)
       activesupport (= 4.2.3)
       globalid (>= 0.3.0)
@@ -102,7 +107,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers
+  active_model_serializers!
   rails (= 4.2.3)
   rails-api
   spring
