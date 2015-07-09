@@ -27,3 +27,4 @@ API for an OpenWorks Status Page
 ## Gem Docs
 
 [Rails API](https://github.com/rails-api/rails-api)
+[AMS](https://github.com/rails-api/active_model_serializers)
