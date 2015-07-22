@@ -15,6 +15,7 @@ API for an OpenWorks Status Page
   * Doors
 * Noise
 * Seats/desks available
+* Coffee
 
 ## Example Status Pages
 
