@@ -1,3 +1,3 @@
-class ThingsController < JSONAPI::ResourceController
+class ThingsController < ApplicationController
 
 end
