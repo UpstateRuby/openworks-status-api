@@ -61,6 +61,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.6.4)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.3)
@@ -108,9 +109,10 @@ PLATFORMS
 DEPENDENCIES
   jsonapi-resources
   pry
+  rack-cors
   rails (= 4.2.3)
   spring
   sqlite3
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
