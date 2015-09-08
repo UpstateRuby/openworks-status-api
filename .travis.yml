@@ -1,6 +1,2 @@
 language: ruby
 script: bundle exec rspec spec
-env:
-  global:
-    - SECRET_TOKEN=854d49c12cf404c46896b2fa481b620e8b20be54e60e08c849e2410a3a37d143166e76d7161a1df84a73ab28f5ebe8028b8c3cd37da92a06608968b28de69f26
-
