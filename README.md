@@ -1,5 +1,8 @@
 # Openworks Status API
+[![Build Status](https://travis-ci.org/UpstateRuby/openworks-status-api.svg?branch=master&style=flat-square)](https://travis-ci.org/UpstateRuby/openworks-status-api)
+
 API for an OpenWorks Status Page
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
