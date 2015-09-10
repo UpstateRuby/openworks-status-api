@@ -2,6 +2,15 @@ require 'spec_helper'
 
 describe "Things API" do
 
+  describe "OPTIONS /things" do
+    it "reponds with CORS Preflight headers" do
+
+      options "/things", {}, authorized_preflight_headers
+
+      expect(response.status).to eq 200
+    end
+  end
+
   describe "GET /things" do
     it "returns all the things" do
       FactoryGirl.create :thing, name: "HVAC"

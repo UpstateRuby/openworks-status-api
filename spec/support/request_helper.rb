@@ -8,10 +8,8 @@ module RequestHelper
 
   def authorized_preflight_headers
     {
-      'HTTP_ACCEPT' => 'application/vnd.api+json',
-      'HTTP_AUTHORIZATION' => 'Token openworksauthtoken',
-      'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'accept, authorization',
-      'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET'
+      'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'accept, authorization, origin',
+      'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET',
     }
   end
 end
