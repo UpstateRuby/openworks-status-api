@@ -2,6 +2,8 @@ class Thing < ActiveRecord::Base
 	validates :name, uniqueness: true, presence: true
   validates :status, presence: true
 
+  belongs_to :location
+
   STATUSES = {
     ok: 0,
     bad: 1,
