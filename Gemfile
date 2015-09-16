@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
-gem 'sqlite3'
-
 gem 'jsonapi-resources'
 
 gem 'rack-cors', :require => 'rack/cors'
@@ -15,6 +13,7 @@ end
 
 group :development do
   gem 'pry'
+  gem 'sqlite3'
 end
 
 group :development, :test do
