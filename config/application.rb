@@ -22,7 +22,7 @@ module OpenworksStatusApi
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-
+    config.assets.enabled = false
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
         origins '*'
