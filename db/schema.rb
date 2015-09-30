@@ -11,13 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150914144453) do
+ActiveRecord::Schema.define(version: 20150921161235) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "properties", force: :cascade do |t|
+    t.integer  "thing_id"
+    t.string   "name"
+    t.string   "value"
+    t.string   "unit"
+    t.integer  "precision"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "properties", ["thing_id"], name: "index_properties_on_thing_id"
 
   create_table "things", force: :cascade do |t|
     t.string   "name"

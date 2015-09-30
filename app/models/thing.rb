@@ -4,6 +4,8 @@ class Thing < ActiveRecord::Base
 
   belongs_to :location
 
+  has_many :properties
+
   STATUSES = {
     ok: 0,
     bad: 1,
