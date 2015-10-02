@@ -28,7 +28,7 @@ module OpenworksStatusApi
         origins '*'
         resource '*',
           :headers => :any,
-          :methods => [:get, :post, :delete, :put, :options, :head],
+          :methods => [:get, :post, :put, :patch, :delete, :options, :head],
           :max_age => 0
       end
     end
