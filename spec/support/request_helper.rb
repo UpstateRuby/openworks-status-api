@@ -8,8 +8,9 @@ module RequestHelper
 
   def authorized_preflight_headers
     {
-      'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'accept, authorization, origin',
+      'HTTP_ACCESS_CONTROL_REQUEST_HEADER' => 'accept, authorization, origin',
       'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET',
+      'ORIGIN' => 'http://otherdomain.test/'
     }
   end
 end
