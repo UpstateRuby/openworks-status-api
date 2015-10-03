@@ -1,8 +1,8 @@
 FactoryGirl.define do
-  factory :thing do |thing|
-    thing.name "HVAC"
-    thing.status 500
-    thing.reason "Hot"
-    thing.location_id 1
+  factory :thing do
+    sequence(:name) { |n| "thing#{n}" }
+    status 500
+    reason "Hot"
+    location_id 1
   end
 end
