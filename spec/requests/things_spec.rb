@@ -28,6 +28,29 @@ describe "Things API" do
     end
   end
 
+  describe "GET /things/:id" do
+    it "returns the thing" do
+      thing = FactoryGirl.create :thing
+      prop1 = FactoryGirl.create :property, thing: thing, name: "Temperature"
+      prop2 = FactoryGirl.create :property, thing: thing, name: "Humidity"
+      prop3 = FactoryGirl.create :property, thing: thing, name: "Noise"
+
+      get "/things/#{thing.id}", {}, authorized_headers
+
+      body = JSON.parse(response.body)
+
+      expect(body['data']).not_to eq nil
+      expect(body['data']['id']).to eq thing.id.to_s
+      expect(body['data']['type']).to eq "things"
+      expect(body['data']['links']).not_to eq nil
+      expect(body['data']['links']['self']).to end_with "/things/#{thing.id}"
+      expect(body['data']['attributes']).not_to eq nil
+      expect(body['data']['attributes'][prop1.name]).to eq prop1.value
+      expect(body['data']['attributes'][prop2.name]).to eq prop2.value
+      expect(body['data']['attributes'][prop3.name]).to eq prop3.value
+    end
+  end
+
   describe "GET /things/:id/properties" do
     it "returns all of the properties of the thing" do
       thing = FactoryGirl.create :thing
