@@ -1,4 +1,5 @@
 class Thing < ActiveRecord::Base
+
 	validates :name, uniqueness: true, presence: true
   validates :status, presence: true
 
@@ -13,12 +14,12 @@ class Thing < ActiveRecord::Base
   }
 
   STATUSES.keys.each do |key|
-    
+
     define_method("#{key}!".to_sym) do
       update_attribute(:status, STATUSES[key])
     end
 
-    define_method("#{key}?".to_sym) do 
+    define_method("#{key}?".to_sym) do
       status == STATUSES[key]
     end
 
