@@ -7,6 +7,8 @@ gem 'jsonapi-resources'
 
 gem 'rack-cors', :require => 'rack/cors'
 
+gem 'paper_trail', '~> 4.0.0'
+
 group :production do
   gem 'pg'
 end
