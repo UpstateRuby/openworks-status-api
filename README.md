@@ -35,7 +35,7 @@ Otto will create the a local development environment for you. If you don't have 
 
 The process may take a few minutes depending your connection and processor speeds. If everything goes well Otto should provide some instructions in the terminal.
 
-At present we need to manually install Ruby dependencies. SSH into the new VM with `otto dev ssh` and then run `bundle`. Once Bundler has installed all of the dependencies we can start the server with `rackup --host 0.0.0.0`. In a new terminal or after `exit`ing the current one run otto dev address to get the address of your development environment. Visit port 9292 of that address in your browser. For example, `172.16.1.194:9292`. Your IP address will probably vary. You should see the default Rails "Welcome Aboard" page.
+Otto will run `bundle instlle` so the only thing left to do is SSH into the new VM with `otto dev ssh` and start the server with `rackup --host 0.0.0.0`. In a new terminal or after `exit`ing the current one run otto dev address to get the address of your development environment. Visit port 9292 of that address in your browser. For example, `172.16.1.194:9292`. Your IP address will probably vary. You should see the default Rails "Welcome Aboard" page.
 
 Congratulations! You're now ready to hack on the OpenWorks Status API.
 
