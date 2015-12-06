@@ -1,6 +1,6 @@
 class Thing < ActiveRecord::Base
 
-	validates :name, uniqueness: true, presence: true
+	validates :name, uniqueness: {scope: :location_id}, presence: true
   validates :status, presence: true
 
   belongs_to :location
