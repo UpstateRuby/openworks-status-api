@@ -18,8 +18,8 @@ If you've never written Ruby on your machine before, don't have a Ruby version m
 You'll need to Install [Otto](https://ottoproject.io) and [Virtual Box](https://www.virtualbox.org) (At least the most recent 4.3 version). If you're on OS X you can use [Homebrew](http://brew.sh) to install Otto.
 
 ```
-brew install caskroom/cask/brew-cask
-brew cask install otto
+brew update
+brew install otto
 ```
 
 Once you have Otto and VirtualBox installed you can run:
