@@ -20,6 +20,7 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'simplecov', '~> 0.11'
 end
 
 # To use ActiveModel has_secure_password
