@@ -27,6 +27,12 @@ describe "Locations API" do
   end
 
   describe "GET /locations without locations" do
+    it "fails with unauthorized headers" do
+      get "/locations", {}, unauthorized_headers
+
+      expect(response.status).to eq 401
+    end
+
     it "returns an emtpy data array" do
 
       get "/locations", {}, authorized_headers

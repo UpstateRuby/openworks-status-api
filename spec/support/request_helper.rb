@@ -13,6 +13,13 @@ module RequestHelper
       'ORIGIN' => 'http://otherdomain.test/'
     }
   end
+
+  def unauthorized_headers
+    {
+      'HTTP_ACCEPT' => 'application/vnd.api+json',
+      'HTTP_AUTHORIZATION' => 'Token badtokenauth'
+    }
+  end
 end
 
 module ActionDispatch::Integration::RequestHelpers
