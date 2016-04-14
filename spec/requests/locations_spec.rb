@@ -60,6 +60,8 @@ describe "Locations API" do
 
       expect(body['data']).not_to eq nil
       body['data'].each do |thing|
+        puts "This is the thing"
+        puts thing
         expect(thing['id']).not_to eq nil
         expect(thing['type']).not_to eq nil
         expect(thing['links']).not_to eq nil
