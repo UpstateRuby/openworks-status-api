@@ -3,7 +3,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
-gem 'jsonapi-resources'
+#gem 'jsonapi-resources'
+
+# API Gems
+gem 'active_model_serializers', '~> 0.10.x'
 
 gem 'rack-cors', :require => 'rack/cors'
 
@@ -19,6 +22,7 @@ end
 group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem "factory_girl_rails", "~> 4.0"
   gem 'simplecov', '~> 0.11'
 end

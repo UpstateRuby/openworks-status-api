@@ -1,9 +1,9 @@
-class ApplicationController < JSONAPI::ResourceController
+class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :null_session
 
-  before_action :authenticate! 
+  before_action :authenticate!
   after_action :cors_set_access_control_headers
 
   private
@@ -16,7 +16,7 @@ class ApplicationController < JSONAPI::ResourceController
   end
 
   def authenticate!
-    render_unauthorized unless self.request.headers["Authorization"].present? and 
+    render_unauthorized unless self.request.headers["Authorization"].present? and
                                self.request.headers["Authorization"].split(" ")[1] == "openworksauthtoken"
   end
 
