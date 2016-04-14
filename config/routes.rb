@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   resources :things do
     resources :properties
   end
-  resources :properties
+  resources :properties do
+    resources :things
+  end
 end
