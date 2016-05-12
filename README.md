@@ -9,6 +9,9 @@ For current dependency list, see `Gemfile` or `Gemfile.lock`.
 
 ## Developing
 
+### The production API
+openworks-status-api.herokuapp.com/things
+
 ### Getting Set Up
 
 #### The Easy Way :tm:
