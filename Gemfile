@@ -5,6 +5,8 @@ gem 'rails', '4.2.3'
 
 gem 'jsonapi-resources'
 
+gem 'devise'
+
 gem 'rack-cors', :require => 'rack/cors'
 
 group :production do
