@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     resources :properties
   end
   resources :properties do
-    resources :things
+    resource :thing
   end
 end

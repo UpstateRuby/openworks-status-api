@@ -14,10 +14,11 @@ describe "Locations API" do
       body = JSON.parse(response.body)
 
       expect(body['data']).not_to eq nil
+
       body['data'].each do |thing|
         expect(thing['id']).not_to eq nil
         expect(thing['type']).not_to eq nil
-        expect(thing['links']).not_to eq nil
+        # expect(thing['links']).not_to eq nil
         expect(thing['attributes']).not_to eq nil
         expect(thing['relationships']).not_to eq nil
       end
@@ -60,11 +61,9 @@ describe "Locations API" do
 
       expect(body['data']).not_to eq nil
       body['data'].each do |thing|
-        puts "This is the thing"
-        puts thing
         expect(thing['id']).not_to eq nil
         expect(thing['type']).not_to eq nil
-        expect(thing['links']).not_to eq nil
+        # expect(thing['links']).not_to eq nil
         expect(thing['attributes']).not_to eq nil
         expect(thing['relationships']).not_to eq nil
       end

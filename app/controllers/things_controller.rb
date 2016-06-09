@@ -1,6 +1,8 @@
 class ThingsController < ApplicationController
   def index
-    things = Thing.all
+    location = Location.find(params[:location_id])
+    things = location.things
+
     render json: things
   end
 
